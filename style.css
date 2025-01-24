@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Fragment Mono', monospace;
+    font-family: 'Noto Sans Mono', monospace; */
+}
+
+html {
+    scroll-behavior: smooth !important;
+    font-size: 16px; /* 1rem = 16px */
+}
+
+.fontRedHat {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.fontFragment {
+    font-family: 'Fragment Mono', monospace;
+}
+
+.fontNoto {
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+/* POZADINA */
+body {
+    background-color: rgba(34, 34, 34, 1);
+}
+
+.pozadina {
+    background-image: linear-gradient(0deg, rgba(34, 34, 34, 1), rgba(34, 34, 34, 0.5)), url('./slike/Aca/Ja2.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 62.5rem; /* 1000px */
+    display: flex;
+    align-items: center;
+}
+
+/* NAVIGACIJA */
+.scrolled {
+    background-color: #191919; /* Izaberite boju po želji */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.scrolled #kontakt:hover {
+    color: #191919;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.25rem 2em; /* 20px */
+    border-bottom-right-radius: 0.625rem; /* 10px */
+    border-bottom-left-radius: 0.625rem; /* 10px */
+    font-weight: 500;
+    font-size: 0.75rem; /* 12px */
+    letter-spacing: 0.1875rem; /* 3px */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li {
+    margin: 0 0.9375rem; /* 15px */
+    align-items: center;
+    padding: 10px;
+    
+}
+.nav-links li:last-child{
+    display: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #bbbbbb;
+    padding: 0.9375rem; /* 15px */
+}
+
+.nav-links li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 2.375rem;
+    text-decoration-thickness: 0.188rem;
+    padding-bottom: 2.188rem;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    height: 0.1875rem; /* 3px */
+    width: 1.5625rem; /* 25px */
+    background: white;
+    margin: 0.25rem 0; /* 4px */
+    transition: 0.4s;
+}
+
+#kontakt {
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: 0.125rem solid white; /* 2px */
+    border-radius: 0.3125rem; /* 5px */
+    padding: 0.9375rem 1.875rem; /* 15px 30px */
+    opacity: 1;
+    transition: opacity 0.3s ease-out, background-color 0.2s ease-in-out;
+    margin-left: 0.9375rem;
+}
+
+#kontakt:hover {
+    color: #191919;
+    background-color: white;
+    opacity: 1;
+    
+}
+
+#kontaktResp{
+    display: none;
+}
+
+#active a{
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 2.375rem;
+    text-decoration-thickness: 0.188rem;
+    color: #ffffff;
+}
+
+.nav img {
+    width: 3.125rem; /* 50px */
+    height: auto;
+}
+.propHidden {
+    display: none;
+}
+/* KRAJ NAVIGACIJE */
+
+/* MAIN CONTENT */
+.main {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.1875rem; /* 3px */
+}
+
+.main-content {
+    width: 100%;
+    color: white;
+    font-size: 1.375rem; /* 22px */
+}
+
+.main-content p {
+    color: #bbbbbb;
+    font-size: 1.25rem; /* 20px */
+    margin-top: 0.625rem; /* 10px */
+}
+
+.social {
+    display: flex;
+    margin-top: 10%;
+}
+
+.social a {
+    padding: 1.25rem; /* 20px */
+}
+
+.social a img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease-out;
+}
+
+.social a img:hover {
+    opacity: 0.5;
+}
+
+.slika {
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.slika img {
+    width: 100%;
+    float: right;
+    border-radius: 100%;
+    transform-origin: 0, 0;
+    transition: transform 0.3s ease-in;
+}
+
+.slika img:hover {
+    transform: scale(1.3);
+}
+
+/* KRAJ MAIN CONTENTA */
+
+/* O MENI */
+.oMeni {
+    width: 80%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 1);
+    color: #222;
+    border-radius: 0.625rem; /* 10px */
+    letter-spacing: 0.0625rem; /* 1px */
+    margin-bottom: 4%;
+    scroll-margin-top: 6.25rem; /* 100px */
+}
+
+.oMeni h1 {
+    text-align: center;
+    padding-top: 2%;
+    font-size: 1.5rem; /* 24px */
+}
+
+.oMeni p {
+    text-align: justify;
+    font-size: 1rem; /* 16px */
+    padding: 2% 10%;
+}
+
+/* KRAJ O MENI */
+
+/* VESTINE */
+.vestine {
+    width: 80%;
+    margin: auto;
+    color: white;
+    padding-bottom: 4%;
+}
+
+.vestine h1 {
+    margin: auto;
+    width: max-content;
+    border-bottom: 0.125rem solid white; /* 2px */
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    font-size: 1.5rem; /* 24px */
+}
+
+.programiranje {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 4% 0;
+}
+
+.jezici {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 4% 0;
+}
+
+/* KRAJ VESTINE */
+
+/* PORTFOLIO */
+.pozadina2 {
+    background-image: linear-gradient(180deg, rgba(34, 34, 34, 1), rgba(34, 34, 34, 0.8) 15%), url('./slike/Portfolio slike/TramvajGalata.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.portfolio {
+    color: #222;
+    width: 100%;
+    margin: auto;
+    padding: 3% 0;
+}
+
+.portfolio h1 {
+    display: block;
+    color: white;
+    border-bottom: 0.125rem solid white; /* 2px */
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    width: max-content;
+    margin: auto;
+    font-size: 1.5rem; /* 24px */
+}
+
+.portfolioContent {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 6%;
+}
+
+.portfolioAlign {
+    width: 33%;
+    padding: 3.125rem; /* 50px */
+    border-radius: 0.625rem; /* 10px */
+    text-align: justify;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 0 1.875rem rgba(34, 34, 34, 1); /* 30px */
+}
+
+.container {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.625rem; /* 10px */
+}
+
+.portfolioAlign p {
+    font-size: 1rem; /* 16px */
+    margin-top: 2.5rem; /* 40px */
+    font-weight: 300;
+}
+
+.portfolioAlign:hover .container {
+    opacity: 0.3;
+}
+
+.portfolioAlign:hover .middle {
+    opacity: 1 !important;
+}
+
+.middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.tekst {
+    text-decoration: none;
+    background-color: #222;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem; /* 16px */
+    padding: 0.8125rem 1.25rem; /* 13px 20px */
+    opacity: 1 !important;
+    position: relative;
+    cursor: pointer;
+    border-radius: 0.3125rem; /* 5px */
+}
+
+/* KRAJ PORTFOLIO */
+
+/* KONTAKT */
+.kontaktKlasa {
+    margin: 1.25rem auto; /* 20px */
+    width: 68%;
+    background-color: white;
+    border-radius: 0.625rem; /* 10px */
+    padding: 2%;
+    box-shadow: 0 0 1.875rem rgba(34, 34, 34, 1); /* 30px */
+}
+
+.kontaktKlasa h1 {
+    display: block;
+    color: #222;
+    border-bottom: 0.125rem solid #222; /* 2px */
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    width: max-content;
+    margin: auto;
+    font-size: 1.5rem; /* 24px */
+    margin-bottom: 3.125rem; /* 50px */
+}
+
+.kontaktKlasa p {
+    font-size: 1rem; /* 16px */
+    text-align: center;
+}
+
+.kontaktForma {
+    margin: auto;
+    margin-top: 3.125rem; /* 50px */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kontaktForma input {
+    padding: 0.625rem; /* 10px */
+    margin: 0.625rem 0; /* 10px */
+    width: 100%;
+    border: none;
+    border-bottom: 0.125rem solid #222; /* 2px */
+}
+
+.kontaktForma textarea {
+    margin: 1.875rem 0; /* 30px */
+    border: none;
+    border-bottom: 0.125rem solid #222; /* 2px */
+    border-left: 0.125rem solid #222; /* 2px */
+    resize: none;
+    width: 100%;
+    padding: 0.625rem; /* 10px */
+}
+
+.kontaktForma input:focus, .kontaktForma textarea:focus {
+    outline: none;
+}
+
+#submitBtn {
+    margin: 3.125rem auto; /* 50px */
+    width: 12.5rem; /* 200px */
+    text-align: center;
+    border: none;
+    border-radius: 0.3125rem; /* 5px */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: 600;
+    letter-spacing: 0.125rem; /* 2px */
+    padding: 1.25rem 1.875rem; /* 20px 30px */
+    background-color: white;
+    color: #222;
+    border: 0.125rem solid #222; /* 2px */
+}
+
+#submitBtn:hover {
+    background-color: #222;
+    color: white;
+}
+
+/* KRAJ KONTAKT */
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    background-color: #191919;
+    color: white;
+    text-align: center;
+    padding: 1.875rem 0; /* 30px */
+    font-size: 70%; /* 12px */
+    letter-spacing: 0.125rem; /* 2px */
+}
+
+.footer span {
+    color: #888;
+}
+
+.socialFooter img {
+    width: 3.125rem; /* 50px */
+    height: 3.125rem; /* 50px */
+    margin: 0.625rem; /* 10px */
+    transition: opacity 0.3s ease-out;
+}
+
+.socialFooter img:hover {
+    opacity: 0.5;
+}
+
+/* KRAJ FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,523 @@
+/* RESPONSIVE DESKTOP*/
+@media (max-width: 1080px){
+    .portfolio{
+        width: 90%;
+    }
+    .portfolio h1{
+        font-size: 1.5rem;
+    }
+    .portfolioContent{
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolioAlign{
+        width: 90%;
+        margin: 2.5rem 0;
+    }
+    .tekst{
+        font-size: 0.8rem;
+        padding: 0.625rem 1rem;
+        background-color: #222;
+        color: white;
+    }
+}
+
+@media (max-width: 1000px){
+    /* O MENI */
+
+    .oMeni{
+        width: 90%;
+    }
+
+    /* VESTINE */
+    .vestine{
+        width: 90%;
+    }
+    .programiranje{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    .programiranje div{
+        margin: 1rem;
+    }
+
+    /* KRAJ VESTINE */
+
+    /* KONTAKT */
+    .kontaktKlasa{
+        width: 90%;
+    }
+}
+
+@media(max-width: 886px){
+    .main{
+        justify-content: space-between;
+        /* margin-top: 10rem; */
+    }
+    .main-content{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .slika{
+        width: 90%;
+        border-radius: 100%;
+    }
+}
+
+@media(max-width:800px){ /* MENJANJE FONTSIZE*/
+    html{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 790px){
+
+    /* NAVIGACIJA */
+    .nav{
+        padding: 1.25rem 3rem;
+        background-color: #191919;
+        transition: 0.5s;
+        justify-content: space-between;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 5rem; /* 60px */
+        left: 0;
+        background-color: #191919;
+        
+    }
+    .nav-links li {
+        text-align: center;
+        margin: 1.25rem 0; /* 10px */
+    }
+    .nav-links li:last-child{
+        display: block;
+    }
+    .nav-links a {
+        padding: 1.25rem; /* 20px */
+    }
+    .nav-links a:hover{
+        text-decoration: underline !important;
+        text-underline-offset: 1rem !important;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+    .nav-links.activeResp {
+        display: flex;
+        border-bottom-right-radius: 0.625rem; /* 10px */
+        border-bottom-left-radius: 0.625rem; /* 10px */
+    }
+
+    .nav-links li:last-child {
+        margin-bottom: 2rem; /* 20px */
+    }
+    #kontakt{
+        display: none;
+    }
+    #kontaktResp{
+        display: inline;
+        font-weight: 700;
+        color: white;
+        background-color: transparent;
+        border: 0.125rem solid white; /* 2px */
+        border-radius: 0.3125rem; /* 5px */
+        padding: 0.9375rem 1.875rem; /* 15px 30px */
+        opacity: 1;
+        transition: opacity 0.3s ease-out, background-color 0.2s ease-in-out;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    #kontaktResp:hover {
+        color: #191919;
+        background-color: white;
+        opacity: 1;
+    }
+    #active a{
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+    }
+    /* KRAJ NAVIGACIJE */
+
+    /* POCETNA */
+    .main{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main-content{
+        margin-left: 0;
+        font-size: 1.188rem;
+    }
+    .main-content h2{
+        font-size: 17px;
+    }
+    /* .main-content h1{
+        margin: 2.5rem 0;
+    } */
+    .main-content p{
+        font-size: 1rem;
+    }
+    .social{
+        margin: 5% auto;
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    .social a img{
+        width: 3.5rem;
+    }
+    .slika{
+        width: 60%;
+    }
+    /* KRAJ POCETNE */
+
+    /* O MENI */
+    .oMeni{
+        width: 100%;
+    }
+    .oMeni h1{
+        font-size: 1.25rem;
+    }
+    .oMeni p{
+        font-size: 0.8rem;
+    }
+    /* KRAJ O MENI */
+
+    /* VESTINE */
+    .vestine {
+        width: 90%;
+    }
+    .programiranje {
+        width: 100%;
+    }
+    .programiranje h2, .jezici h2{
+        font-size: 1rem;
+        justify-content: space-evenly;
+    }
+    .vestine h1, .jezici h1{
+        font-size: 1.25rem;
+    }
+    .vestine img, .jezici img{
+        width: 70px;
+    }
+
+    /* KRAJ VESTINE */
+
+    /* PORTFOLIO */
+
+    .portfolio h1{
+        font-size: 1.25rem;
+    }
+    .portfolioAlign p{
+        font-size: 0.8rem;
+    }
+
+
+    /* KRAJ PORTFOLIO */
+
+    /* KONTAKT */
+    .kontaktKlasa{
+        width: 100%;
+    }
+    .kontaktKlasa h1{
+        font-size: 1.25rem;
+    }
+    .kontaktKlasa p{
+        font-size: 0.8rem;
+    }
+    .kontaktForma #submitBtn{
+        width: 80%;
+    }
+    /* KRAJ KONTAKT */
+
+    /* FOOTER */
+    .socialFooter{
+        padding: 20px 0;
+    }
+    .socialFooter img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .footer p{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width:584px){
+    /* MAIN */
+    .main-content{
+        font-size: 1rem;
+    }
+    .main-content p{
+        font-size: 0.9rem;
+    }
+    /* PROGRAMIRANJE */
+    .programiranje h2{
+        font-size: 0.9rem;
+    }
+    /* FONT - SIZE NASLOVI */
+    .oMeni h1, .vestine h1, .portfolio h1, .kontaktKlasa h1{
+        font-size: 1rem;
+    }
+    /* FONT SIZE TEKST */
+
+    .oMeni p, .portfolioAlign p, .kontaktKlasa p{
+        font-size: 0.7rem;
+    }
+    .footer p{
+        font-size: 0.6rem;
+    }
+    /* PORTFOLIO */
+    .portfolio{
+        width: 100%;
+    }
+    .portfolioAlign{
+        width: 100%;
+    }
+    /* KONTAKT */
+    #submitBtn{
+        width: 60% !important;
+        padding: 0.625rem;  
+    }
+}
+
+@media (max-width: 360px){ /* MENJANJE FONTSIZE*/
+    html{
+        font-size:14px;
+    }
+    .social{
+        margin: 5% 0;
+    }
+    .social a img{
+        width: 2.5rem;
+    }
+}
+
+/* PORTRAIT */
+@media (orientation: portrait) and (hover: none) and (pointer: coarse){
+
+    html{
+        font-size: 16px;
+    }
+    .pozadina{
+        height: 60rem;
+    }
+    .main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 10%;
+    }
+    .nav{
+        padding: 1.25rem 3rem;
+        background-color: #222;
+        transition: 0.5s;
+        justify-content: space-between;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 5rem; /* 60px */
+        left: 0;
+        background-color: #222;
+        
+    }
+    .nav-links li {
+        text-align: center;
+        margin: 1.25rem 0; /* 10px */
+    }
+    .nav-links a {
+        padding: 1.25rem; /* 20px */
+    }
+    .nav-links a:hover{
+        text-decoration: underline !important;
+        text-underline-offset: 1rem !important;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+    .nav-links.activeResp {
+        display: flex;
+        border-bottom-right-radius: 0.625rem; /* 10px */
+        border-bottom-left-radius: 0.625rem; /* 10px */
+    }
+
+    .nav-links li:last-child {
+        display: inline;
+        margin-bottom: 2rem; /* 20px */
+    }
+    #kontakt{
+        display: none;
+    }
+    #kontakt:hover{
+        color: #222;
+    }
+    #kontaktResp{
+        display: inline;
+        font-weight: 700;
+        color: white;
+        background-color: transparent;
+        border: 0.125rem solid white; /* 2px */
+        border-radius: 0.3125rem; /* 5px */
+        padding: 0.9375rem 1.875rem; /* 15px 30px */
+        opacity: 1;
+        transition: opacity 0.3s ease-out, background-color 0.2s ease-in-out;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    #active a{
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+    }
+
+    .oMeni, .vestine, .kontaktKlasa{
+        width: 100%;
+    }
+
+    .portfolioAlign{
+        width: 100%;
+    }
+    .middle{
+        opacity: 1;
+        width: 40%;
+        display: inline-block;
+        left: 50%;
+        top: 100%;
+    }
+    .tekst{
+        border: 2px solid white;
+    }
+    .portfolioAlign:hover .container {
+        opacity: 1;
+    }
+}
+@media (orientation: portrait) and (hover: none) and (pointer: coarse) and (max-width: 600px){
+    html{
+        font-size: 14px;
+    }
+    .kontaktKlasa p{
+        padding: 0 1rem;
+    }
+}
+@media (orientation: portrait) and (hover: none) and (pointer: coarse) and (min-width: 791px){
+    .main{
+        margin-top: 0;
+        top: 40%;
+    }
+}
+@media (orientation: portrait) and (hover: none) and (pointer: coarse) and (max-width: 320px){
+    .programiranje{
+        display: flex;
+        flex-direction: column;
+    }
+    .jezici{
+        display: flex;
+        flex-direction: column;        
+    }
+    .jezici div{
+        margin: 1rem;
+    }
+}
+/* TABLET LANDSCAPE */
+
+@media (orientation: landscape) and (hover: none) and (pointer: coarse){
+    html{
+        font-size: 14px;
+    }
+    .nav{
+        padding: 1.25rem 3rem;
+        background-color: #222;
+        transition: 0.5s;
+        justify-content: space-between;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 5rem; /* 60px */
+        left: 0;
+        background-color: #222;
+        
+    }
+    .nav-links li {
+        text-align: center;
+        margin: 1.25rem 0; /* 10px */
+    }
+    .nav-links a {
+        padding: 1.25rem; /* 20px */
+    }
+    .nav-links a:hover{
+        text-decoration: underline !important;
+        text-underline-offset: 1rem !important;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+    .nav-links.activeResp {
+        display: flex;
+        border-bottom-right-radius: 0.625rem; /* 10px */
+        border-bottom-left-radius: 0.625rem; /* 10px */
+    }
+
+    .nav-links li:last-child {
+        display: inline;
+        margin-bottom: 2rem; /* 20px */
+    }
+    #kontakt{
+        display: none;
+    }
+    #kontakt:hover{
+        color: #222;
+    }
+    #kontaktResp{
+        display: inline;
+        font-weight: 700;
+        color: white;
+        background-color: transparent;
+        border: 0.125rem solid white; /* 2px */
+        border-radius: 0.3125rem; /* 5px */
+        padding: 0.9375rem 1.875rem; /* 15px 30px */
+        opacity: 1;
+        transition: opacity 0.3s ease-out, background-color 0.2s ease-in-out;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    #active a{
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+    }
+    .oMeni{
+        width: 100%;
+    }
+    .middle{
+        opacity: 1;
+        width: 40%;
+        display: inline-block;
+        left: 50%;
+        top: 100%;
+    }
+    .tekst{
+        border: 2px solid white;
+    }
+    .portfolioAlign:hover .container {
+        opacity: 1;
+    }
+    .programiranje{
+        width: 100%;
+    }
+    .kontaktKlasa{
+        width: 100%;
+    }
+}
